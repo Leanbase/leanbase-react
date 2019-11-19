@@ -1,0 +1,32 @@
+{
+  "name": "leanbase-react",
+  "version": "1.0.0",
+  "description": "A client-side SDK that works with leanbase's API.",
+  "main": "index.js",
+  "dependencies": {
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.7.2"
+  },
+  "devDependencies": {
+    "tslint": "^5.20.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leanbase/leanbase-react.git"
+  },
+  "keywords": [
+    "feature-flags",
+    "sdk",
+    "api",
+    "react"
+  ],
+  "author": "Dipanjan Mukherjee (dipanjan@leanbase.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Leanbase/leanbase-react/issues"
+  },
+  "homepage": "https://github.com/Leanbase/leanbase-react#readme"
+}

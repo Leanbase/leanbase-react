@@ -1,0 +1,4 @@
+node_modules/
+
+# Ignore all generated files
+dist/
