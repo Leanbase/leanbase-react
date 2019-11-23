@@ -85,6 +85,7 @@ const POST_EXCERPTS_FEATURE_ID = 'NBQUnv';
     <Without>
       <div>
         {post.date}
+      </div>
     </Without>
   </LBFeature>
 ...
