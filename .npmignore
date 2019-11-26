@@ -1,0 +1,10 @@
+# All test
+tests/
+
+# All infra files that do not influence usage of the library at all.
+cloudbuild.yaml
+webpack.config.js
+
+# yarn.lock: while it is not a problem if yarn.lock is available as part of 
+# a dependency, in our case, it is occupying way too much disk-space.
+yarn.lock
