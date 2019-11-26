@@ -54,13 +54,13 @@ configureLeanbase(userToken);
 2. Using a wrapper component.
 
 ```TypeScript
-import { LeanbaseApp } from 'leanbase';
+import { LBApp } from 'leanbase';
 
 ...
-  <LeanbaseApp userToken={userToken}>
+  <LBApp userToken={userToken}>
     <ReactRouter>...</ReactRouter>
     ... Your own components.
-  </LeanbaseApp>
+  </LBApp>
 ...
 ```
 
