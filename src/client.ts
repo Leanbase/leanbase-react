@@ -15,17 +15,17 @@ export class LBNetworkClient implements IDeferredLBClient {
 
   private apiUrl: string;
   private teamId: string;
-  private userApiToken: string;
+  private userToken: string;
   private featureMap: FeatureIdToStatusMap = {};
   private isReadyFlag: boolean = false;
   private readyCb?: (featuresList:string[]) => void;
 
-  constructor(teamId: string, userApiToken: string, apiUrl?:string) {
-    if (!userApiToken) {
-      throw Error('LBNetworkClient instances must be created with a userAPIToken');
+  constructor(teamId: string, userToken: string, apiUrl?:string) {
+    if (!userToken) {
+      throw Error('LBNetworkClient instances must be created with a userToken');
     }
 
-    this.userApiToken = userApiToken;
+    this.userToken = userToken;
     this.teamId = teamId;
 
     if (apiUrl) {
@@ -70,7 +70,7 @@ export class LBNetworkClient implements IDeferredLBClient {
     fetch(url, {
       headers: {
         'Content-Type': 'application/json',
-        USER_TOKEN: this.userApiToken,
+        USER_TOKEN: this.userToken,
       },
     })
     .then((response: FetchUserFeaturesResponse) => {
