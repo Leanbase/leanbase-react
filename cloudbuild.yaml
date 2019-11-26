@@ -3,3 +3,6 @@ steps:
     args: ['install']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['test']
+  - name: 'gcr.io/cloud-builders/npm'
+    env: ['NPM_TOKEN=${_NPM_TOKEN}']
+    args: ['publish']
